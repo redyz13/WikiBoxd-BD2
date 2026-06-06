@@ -12,7 +12,7 @@ The application allows users to interact with a movie catalog and associated dat
 
 ## 🧠 Dataset
 
-The project is based on the **MovieLens Latest Small dataset**, provided by the GroupLens Research Group:
+The project is based on the **MovieLens Latest Small dataset**, provided by the GroupLens Research Group:  
 https://grouplens.org/datasets/movielens/latest/
 
 The dataset includes:
@@ -47,6 +47,18 @@ The system follows a **document-oriented model** using MongoDB.
 
 ---
 
+## 📑 Schema Documentation
+
+The MongoDB collection model is documented in:
+
+```text
+docs/schema.md
+```
+
+The schema documentation describes collections, fields, references, identifier mappings and modeling choices.
+
+---
+
 ## 🔗 Queries & Data Access
 
 The system supports operations that combine data from multiple collections, enabling the construction of composite views and aggregated results.
@@ -70,9 +82,11 @@ WikiBoxd-BD2/
 ├── app/                  # Flask application
 │   ├── app.py
 │   └── Dockerfile
+├── data/                 # Raw and synthetic datasets
+├── docs/                 # Project documentation
+│   └── schema.md
 ├── notebooks/            # Data exploration and prototyping
 ├── scripts/              # Import, seed, and utility scripts
-├── data/                 # Raw and synthetic datasets
 ├── docker-compose.yml
 ├── README.md
 └── requirements.txt
